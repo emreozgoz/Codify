@@ -8,7 +8,10 @@ export type SupportedLanguage =
   | 'python'
   | 'curl'
   | 'nodejs'
-  | 'php';
+  | 'php'
+  | 'java'
+  | 'csharp'
+  | 'go';
 
 export interface LanguageOption {
   id: SupportedLanguage;

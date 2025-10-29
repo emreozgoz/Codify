@@ -4,6 +4,11 @@ import { CodeGenerator } from '@/lib/types/generator.types';
 import { JavaScriptFetchGenerator } from './javascript';
 import { PythonGenerator } from './python';
 import { CurlGenerator } from './curl';
+import { NodeJsAxiosGenerator } from './nodejs';
+import { PhpCurlGenerator } from './php';
+import { JavaHttpClientGenerator } from './java';
+import { CSharpHttpClientGenerator } from './csharp';
+import { GoHttpGenerator } from './go';
 
 export class GeneratorFactory {
   private generators: Map<string, CodeGenerator>;
@@ -13,6 +18,11 @@ export class GeneratorFactory {
       ['javascript-fetch', new JavaScriptFetchGenerator()],
       ['python', new PythonGenerator()],
       ['curl', new CurlGenerator()],
+      ['nodejs', new NodeJsAxiosGenerator()],
+      ['php', new PhpCurlGenerator()],
+      ['java', new JavaHttpClientGenerator()],
+      ['csharp', new CSharpHttpClientGenerator()],
+      ['go', new GoHttpGenerator()],
     ]);
   }
 

@@ -57,6 +57,9 @@ export function CodePreview({ request, language, onLanguageChange }: CodePreview
     if (lang === 'python') return 'python';
     if (lang === 'curl') return 'bash';
     if (lang === 'php') return 'php';
+    if (lang === 'java') return 'java';
+    if (lang === 'csharp') return 'csharp';
+    if (lang === 'go') return 'go';
     return 'text';
   };
 

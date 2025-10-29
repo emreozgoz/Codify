@@ -17,8 +17,13 @@ interface LanguageSelectorProps {
 
 const languages = [
   { id: 'javascript-fetch', name: 'JavaScript (Fetch)' },
+  { id: 'nodejs', name: 'Node.js (Axios)' },
   { id: 'python', name: 'Python (Requests)' },
   { id: 'curl', name: 'cURL' },
+  { id: 'php', name: 'PHP (cURL)' },
+  { id: 'java', name: 'Java (HttpClient)' },
+  { id: 'csharp', name: 'C# (HttpClient)' },
+  { id: 'go', name: 'Go (net/http)' },
 ];
 
 export function LanguageSelector({ value, onChange }: LanguageSelectorProps) {
