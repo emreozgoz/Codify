@@ -60,6 +60,11 @@ export function CodePreview({ request, language, onLanguageChange }: CodePreview
     if (lang === 'java') return 'java';
     if (lang === 'csharp') return 'csharp';
     if (lang === 'go') return 'go';
+    if (lang === 'ruby') return 'ruby';
+    if (lang === 'swift') return 'swift';
+    if (lang === 'kotlin') return 'kotlin';
+    if (lang === 'rust') return 'rust';
+    if (lang === 'dart') return 'dart';
     return 'text';
   };
 

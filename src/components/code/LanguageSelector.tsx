@@ -24,6 +24,11 @@ const languages = [
   { id: 'java', name: 'Java (HttpClient)' },
   { id: 'csharp', name: 'C# (HttpClient)' },
   { id: 'go', name: 'Go (net/http)' },
+  { id: 'ruby', name: 'Ruby (HTTParty)' },
+  { id: 'swift', name: 'Swift (URLSession)' },
+  { id: 'kotlin', name: 'Kotlin (OkHttp)' },
+  { id: 'rust', name: 'Rust (reqwest)' },
+  { id: 'dart', name: 'Dart (dio)' },
 ];
 
 export function LanguageSelector({ value, onChange }: LanguageSelectorProps) {

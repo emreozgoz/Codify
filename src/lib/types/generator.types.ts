@@ -11,7 +11,12 @@ export type SupportedLanguage =
   | 'php'
   | 'java'
   | 'csharp'
-  | 'go';
+  | 'go'
+  | 'ruby'
+  | 'swift'
+  | 'kotlin'
+  | 'rust'
+  | 'dart';
 
 export interface LanguageOption {
   id: SupportedLanguage;

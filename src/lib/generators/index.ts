@@ -9,6 +9,11 @@ import { PhpCurlGenerator } from './php';
 import { JavaHttpClientGenerator } from './java';
 import { CSharpHttpClientGenerator } from './csharp';
 import { GoHttpGenerator } from './go';
+import { RubyHTTPartyGenerator } from './ruby';
+import { SwiftURLSessionGenerator } from './swift';
+import { KotlinOkHttpGenerator } from './kotlin';
+import { RustReqwestGenerator } from './rust';
+import { DartDioGenerator } from './dart';
 
 export class GeneratorFactory {
   private generators: Map<string, CodeGenerator>;
@@ -23,6 +28,11 @@ export class GeneratorFactory {
       ['java', new JavaHttpClientGenerator()],
       ['csharp', new CSharpHttpClientGenerator()],
       ['go', new GoHttpGenerator()],
+      ['ruby', new RubyHTTPartyGenerator()],
+      ['swift', new SwiftURLSessionGenerator()],
+      ['kotlin', new KotlinOkHttpGenerator()],
+      ['rust', new RustReqwestGenerator()],
+      ['dart', new DartDioGenerator()],
     ]);
   }
 
